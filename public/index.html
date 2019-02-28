@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Laila:300,400,500,600,700" rel="stylesheet">
+  <title>Slack</title>
+</head>
+<body>
+  <div id="namespaces"></div>
+  <div id="rooms">
+    <p class="rooms-title">Rooms</p>
+    <ul id="rooms-list"></ul>
+  </div>
+  <div id="main">
+    <div id="header-container">
+      <div id="header-text"><span>Current Room</span></div>
+      <div id="search-bar-container" class="input-container">
+        <input type="text" id="search-bar" class="input" placeholder="Search">
+      </div>
+    </div>
+    <div id="messages-container"></div>
+    <div id="message-input-container" class="input-container">
+      <form id="message-form">
+          <input type="text" id="message-input" placeholder="Enter your message" autocomplete="off">
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+  <script src="./scripts.js"></script>
+</body>
+</html>
